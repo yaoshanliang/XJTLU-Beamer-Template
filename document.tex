@@ -69,7 +69,7 @@
 
 \begin{frame}{Usage}
     \begin{itemize}
-        \item Beamer is a powerful and flexible LaTeX class to create great looking presentations.   \url{https://www.overleaf.com/learn/latex/Beamer}
+        \item Beamer is a powerful and flexible \LaTeX{} class to create great looking presentations.   \url{https://www.overleaf.com/learn/latex/Beamer}
         \item Modify from Template Beamer UFC \cite{origin}
     \end{itemize}
 \end{frame}
@@ -137,8 +137,93 @@
     \lstinputlisting[language=Python]{code/main.py}
 \end{frame}
 
+\subsection{Equations}
+
+\begin{frame}{Equation}
+    \begin{block}{Equation without numbers} 
+        \begin{equation*}
+            J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
+        \end{equation*}
+    \end{block}
+%    \begin{exampleblock}{Multiple equations\footnote{If containing text in equations，use $\backslash$mathrm\{\} or $\backslash$text\{\}}}
+%       
+%        \begin{align}
+%            Q_\mathrm{target}&=r+\gamma Q^\pi(s^\prime, \pi_\theta(s^\prime)+\epsilon)\\
+%            \epsilon&\sim\mathrm{clip}(\mathcal{N}(0, \sigma), -c, c)\nonumber
+%        \end{align}
+%    \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+    \begin{block}{Equation with numbers}
+        % Taken from Mathmode.tex
+        \begin{multline}
+            A=\lim_{n\rightarrow\infty}\Delta x\left(a^{2}+\left(a^{2}+2a\Delta x+\left(\Delta x\right)^{2}\right)\right.\label{eq:reset}\\
+            +\left(a^{2}+2\cdot2a\Delta x+2^{2}\left(\Delta x\right)^{2}\right)\\
+            +\left(a^{2}+2\cdot3a\Delta x+3^{2}\left(\Delta x\right)^{2}\right)\\
+            +\ldots\\
+            \left.+\left(a^{2}+2\cdot(n-1)a\Delta x+(n-1)^{2}\left(\Delta x\right)^{2}\right)\right)\\
+            =\frac{1}{3}\left(b^{3}-a^{3}\right)
+        \end{multline}
+    \end{block}
+\end{frame}
+
+
+%\begin{frame}[fragile]{\LaTeX{} Commands}
+%    \begin{exampleblock}{Commands}
+%        \centering
+%        \footnotesize
+%        \begin{tabular}{llll}
+%            \cmd{chapter} & \cmd{section} & \cmd{subsection} & \cmd{paragraph} \\
+%            Chapter & Section & Subsection & Paragraph \\\hline
+%            \cmd{centering} & \cmd{emph} & \cmd{verb} & \cmd{url} \\
+%            Centre Align & Emphasis & Verbatim & Hyperlink \\\hline
+%            \cmd{footnote} & \cmd{item} & \cmd{caption} & \cmd{includegraphics} \\
+%            Foodnote & Item & Caption & FigP\&Pic \\\hline
+%            \cmd{label} & \cmd{cite} & \cmd{ref} \\
+%            Label & Citing & Referring\\\hline
+%        \end{tabular}
+%    \end{exampleblock}
+%    \begin{exampleblock}{Environment Command}
+%        \centering
+%        \footnotesize
+%        \begin{tabular}{lll}
+%            \env{table} & \env{figure} & \env{equation}\\
+%            Table & Figure & Equation \\\hline
+%            \env{itemize} & \env{enumerate} & \env{description}\\
+%            Bullets & Numbering & Description \\\hline
+%        \end{tabular}
+%    \end{exampleblock}
+%\end{frame}
+
+
+\subsection{Figures}
+\begin{frame}{Figures}
+    \begin{figure}
+        \centering
+        \caption{Logo of XJTLU.}
+        \includegraphics[scale=0.5]{libs/XJTLU_logo.png}
+        \source{Description of XJTLU}
+        \label{fig:XJTLU_logo}
+    \end{figure}
+\end{frame}
+
+\subsection{Tables}
+\begin{frame}{Tables}
+\begin{table}[hbt]
+  \begin{tabular}{l|cc}
+    1& 2& \\
+    \hline
+    3& 4& \\
+    5& 6&
+  \end{tabular}
+  \caption{}
+\end{table}
+
+\end{frame}
+
 %% ---------------------------------------------------------------------------
-% This frame show an example to insert multicolumns
+% This frame show an example to insert multi-columns
 \subsection{Multi-columns}
 \begin{frame}{Multi-columns}
     \begin{columns}{}
@@ -150,21 +235,19 @@
             \justify
             Porém, o espaçamento deve ser proporcional entre as colunas para que estas colunas não entrem em coflito. O espaçamento é dado pelo segundo argumento do $\backslash$begin.
         \end{column}
-    \end{columns}    
+    \end{columns}   
+    \begin{columns}{}
+        \begin{column}{0.5\textwidth}
+            \justify
+            É possível colocar mais de uma coluna utilizando os comandos de $\backslash$begin\{column\}\{\} e $\backslash$end\{column\}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \justify
+            Porém, o espaçamento deve ser proporcional entre as colunas para que estas colunas não entrem em coflito. O espaçamento é dado pelo segundo argumento do $\backslash$begin.
+        \end{column}
+    \end{columns}     
 \end{frame}
 
-%% ---------------------------------------------------------------------------
-% This frame show an example to insert figures
-\subsection{Figures}
-\begin{frame}{Figures}
-    \begin{figure}
-        \centering
-        \caption{Logo of XJTLU.}
-        \includegraphics[scale=0.5]{libs/XJTLU_logo.png}
-        \source{Description of XJTLU}
-        \label{fig:XJTLU_logo}
-    \end{figure}
-\end{frame}
 
 %% ---------------------------------------------------------------------------
 % Reference frames

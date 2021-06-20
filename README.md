@@ -9,8 +9,6 @@
     <h1><b>XJTLU Beamer Template</b></h1>
 </div>
 
-Thanks to [Template Beamer UFC](https://github.com/maumneto/TemplateBeamerUFC). This template is modified based on that project.
-
 <!-- Badges -->
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yaoshanliang/XJTLU-Beamer-Template)
@@ -32,6 +30,7 @@ Thanks to [Template Beamer UFC](https://github.com/maumneto/TemplateBeamerUFC). 
 
 <!-- Sections -->
 ## What is it?
+Thanks to [Template Beamer UFC](https://github.com/maumneto/TemplateBeamerUFC). This template is modified based on that project.
 
 This project aims to create a template for presentation for the Xi’an Jiaotong-Liverpool University (XJTLU). It was created a class called **xjtlu_format.cls** with a set of environments and commands related to the document. This template is not an official document from the XJTLU. However, this template can be used to create classes, presentations, short courses, etc.
 
