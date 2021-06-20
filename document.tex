@@ -1,0 +1,185 @@
+\documentclass{libs/XJTLU_format}
+% Inserting the preamble file with the packages
+\input{libs/preamble.tex}
+% Inserting the references file
+\bibliography{references.bib}
+
+% Title
+\title[XJTLU Beamer Template]{\huge\textbf{XJTLU Beamer Template}}
+% Subtitle
+\subtitle{Creating Presentations}
+% Author of the presentation
+\author{Author}
+% Institute's Name
+\institute[XJTLU]{
+    % email for contact
+    \normalsize{\email{author@xjtlu.edu.cn}}
+    \newline
+    % Department Name
+    \department{School of Advanced Technology}
+    \newline
+    % University name
+    \university{Xi’an Jiaotong-Liverpool University}
+}
+% date of the presentation
+\date{\today}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start Document of the Presentation                                           %%               
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% insert the code style
+\input{libs/code}
+
+%% ---------------------------------------------------------------------------
+% First frame (with tile, subtitle, ...)
+\begin{frame}{}
+    \maketitle
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% Second frame
+\begin{frame}{Table of Contents}
+    \begin{multicols}{2}
+        \tableofcontents
+    \end{multicols}
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% This presentation is separated by sections and subsections
+\section{Introduction}
+
+\begin{frame}
+    \begin{itemize}[<+-| alert@+>] % 当然，除了alert，手动在里面插 \pause 也行
+    	\item This is a slide template created by latex for XJTLUers.
+        \item Overleaf  \\ \url{https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb}
+        \item GitHub \\ \url{https://github.com/yaoshanliang/XJTLU-Beamer-Theme}
+    \end{itemize}
+    
+    \note {Write your notes.\\}
+    \begin{note}
+        {Write your notes here}
+    \end{note}
+\end{frame}
+
+\section{Literature Review}
+
+\subsection{Usage}
+
+\begin{frame}{Usage}
+    \begin{itemize}
+        \item Beamer is a powerful and flexible LaTeX class to create great looking presentations.   \url{https://www.overleaf.com/learn/latex/Beamer}
+        \item Modify from Template Beamer UFC \cite{origin}
+    \end{itemize}
+\end{frame}
+
+\subsection{Features}
+
+\begin{frame}{Features}
+	The visual design follows \href{https://www.xjtlu.edu.cn/en/about/professional-services/centre-for-knowledge-and-information/university-marketing-and-communications/visual-identity-assets}{\emph{VISUAL IDENTITY ASSETS}} from XJTLU.
+    \begin{enumerate}
+        \item {XJTLU \example{NAVY} (RGB: 1, 54, 68)}
+        \item {XJTLU \example{PURPLE} (RGB: 206, 87, 193)}
+    \end{enumerate}
+\end{frame}
+
+
+\section{Methodology}
+
+\subsection{Blocks}
+\begin{frame}{Blocks}
+    % Blocks styles
+    \begin{block}{Block I}
+        Text
+    \end{block}
+
+    \begin{alertblock}{Block II}
+        Text
+    \end{alertblock}
+
+    \begin{exampleblock}{Block III}
+        Text
+    \end{exampleblock}  
+    
+    \successbox{Success box}
+    \alertbox{Alert box}
+    \simplebox{Simple box}
+ 
+\end{frame}
+
+
+%% ---------------------------------------------------------------------------
+\subsection{Alorgithms}
+\begin{frame}{Algorithms (pseudocode)}
+    \begin{algorithm}[H]
+        \SetAlgoLined
+        \LinesNumbered
+        \SetKwInOut{Input}{input}
+        \SetKwInOut{Output}{output}
+        \Input{x: float, y: float}
+        \Output{r: float}
+        \While{True}{
+          r = x + y\;
+          \eIf{r >= 30}{
+           ``O valor de $r$ é maior ou iqual a 10.''\;
+           break\;
+           }{
+           ``O valor de $r$ = '', r\;
+          }
+         } 
+         \caption{Algorithm Example}
+    \end{algorithm}
+\end{frame}
+
+\begin{frame}{Algorithms}
+    \lstset{language=Python}
+    \lstinputlisting[language=Python]{code/main.py}
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% This frame show an example to insert multicolumns
+\subsection{Multi-columns}
+\begin{frame}{Multi-columns}
+    \begin{columns}{}
+        \begin{column}{0.5\textwidth}
+            \justify
+            É possível colocar mais de uma coluna utilizando os comandos de $\backslash$begin\{column\}\{\} e $\backslash$end\{column\}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \justify
+            Porém, o espaçamento deve ser proporcional entre as colunas para que estas colunas não entrem em coflito. O espaçamento é dado pelo segundo argumento do $\backslash$begin.
+        \end{column}
+    \end{columns}    
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% This frame show an example to insert figures
+\subsection{Figures}
+\begin{frame}{Figures}
+    \begin{figure}
+        \centering
+        \caption{Logo of XJTLU.}
+        \includegraphics[scale=0.5]{libs/XJTLU_logo.png}
+        \source{Description of XJTLU}
+        \label{fig:XJTLU_logo}
+    \end{figure}
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% Reference frames
+\begin{frame}[allowframebreaks]
+    \frametitle{Reference}
+    \printbibliography
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% Final frame
+\begin{frame}{}
+    \centering
+    \huge{\textbf{\example{Thank You !}}}
+    
+    
+\end{frame}
+
+\end{document}
