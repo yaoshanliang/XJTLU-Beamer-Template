@@ -1,9 +1,3 @@
-<div align="center">
-    <img class="aligncenter" src="images/template.jpg"/>
-</div>
-
-<br/>
-
 <!-- Title -->
 <div align="center">
     <h1><b>XJTLU Beamer Template</b></h1>
@@ -18,6 +12,10 @@
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/yaoshanliang/XJTLU-Beamer-Template)
 [![Overleaf badge](https://img.shields.io/badge/Is_in_Oveleaf_Repository%3F-Yes!-<COLOR>.svg)](https://shields.io/)
 
+<div align="center">
+    <img class="aligncenter" src="images/template.jpg"/>
+</div>
+<br/>
 
 <!-- Table of Contents -->
 <p align="center">
