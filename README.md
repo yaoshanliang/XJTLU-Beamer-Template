@@ -1,5 +1,5 @@
 <div align="center">
-    <img class="aligncenter" src="libs/XJTLU_logo.png" width="220px" height="220px"/>
+    <img class="aligncenter" src="images/template.png"/>
 </div>
 
 <br/>
