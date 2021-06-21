@@ -24,7 +24,7 @@
     <a href="#what is it?">What is it?</a> •
     <a href="#for whom?">For Whom?</a> •
     <a href="#usage">Usage</a> •
-    <a href="#tips">Tips</a> •
+    <a href="#tips">Tips</a>
 </p>
 
 <!-- Sections -->
