@@ -3,6 +3,11 @@
     <h1><b>XJTLU Beamer Template</b></h1>
 </div>
 
+<div align="center">
+    <img class="aligncenter" src="images/template.jpg"/>
+</div>
+<br/>
+
 <!-- Badges -->
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/yaoshanliang/XJTLU-Beamer-Template)
@@ -11,11 +16,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/yaoshanliang/XJTLU-Beamer-Template)](https://github.com/yaoshanliang/XJTLU-Beamer-Template/network)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/yaoshanliang/XJTLU-Beamer-Template)
 [![Overleaf badge](https://img.shields.io/badge/Is_in_Oveleaf_Repository%3F-Yes!-<COLOR>.svg)](https://shields.io/)
-
-<div align="center">
-    <img class="aligncenter" src="images/template.jpg"/>
-</div>
-<br/>
 
 <!-- Table of Contents -->
 <p align="center">
