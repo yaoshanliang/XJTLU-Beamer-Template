@@ -23,9 +23,8 @@
 <p align="center">
     <a href="#what is it?">What is it?</a> •
     <a href="#for whom?">For Whom?</a> •
+    <a href="#usage">Usage</a> •
     <a href="#tips">Tips</a> •
-    <a href="#changelog">Changelog</a> •
-    <a href="#author">Author</a>
 </p>
 
 <!-- Sections -->
@@ -43,6 +42,14 @@ This template can be useful for the XJTLU professors and students.
 - <b>Students:</b> for assignments and presentations
 
 - <b>Others:</b> for works and presentations
+
+## Usage
+
+Copy or download the project.
+
+- <b>Overleaf:</b> https://www.overleaf.com/latex/templates/xjtlu-beamer-template/sfrvnnpcsmgh
+  
+- <b>Github:</b> https://github.com/yaoshanliang/XJTLU-Beamer-Template
 
 ## Tips
 

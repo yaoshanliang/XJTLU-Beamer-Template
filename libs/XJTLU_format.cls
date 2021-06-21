@@ -39,8 +39,8 @@
 \definecolor{yellow}{RGB}{255, 242, 0}
 \definecolor{aqua}{RGB}{34, 189, 173}
 
-% style of the blocks ufc
-\beamerboxesdeclarecolorscheme{blockUFC}{navy_theme}{white}
+% style of the blocks XJTLU
+\beamerboxesdeclarecolorscheme{blockXJTLU}{navy_theme}{white}
 \beamer@autopdfinfotrue
 \beamer@notesnormalstrue
 
