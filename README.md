@@ -198,4 +198,15 @@ To put the email
 \email{user@domain}
 ```
 
+## Examples
+<div align="center">
+    <img class="aligncenter" style="width:48%;" src="images/Example-1.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-2.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-3.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-4.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-5.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-6.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-7.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-8.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-9.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-10.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-11.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-13.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-14.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-15.png"/>
+    <img class="aligncenter" style="width:48%;" src="images/Example-16.png"/> <img class="aligncenter" style="width:48%;" src="images/Example-17.png"/>
+</div>
 
