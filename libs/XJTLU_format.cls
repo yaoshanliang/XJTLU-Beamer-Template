@@ -48,7 +48,7 @@
 \usecolortheme[named=navy_theme]{structure}
 
 \useinnertheme{rectangles}
-\useoutertheme[subsection=false]{miniframes}
+\useoutertheme{split}
 \setbeamertemplate{navigation symbols}{}
 
 
@@ -188,3 +188,6 @@
       \href{mailto:#1}{#1}
     }
 }
+
+% Show number of figures
+\setbeamertemplate{caption}[numbered]
