@@ -1,5 +1,5 @@
-\documentclass{libs/XJTLU_format}
-% Inserting the preamble file with the packages
+\documentclass[aspectratio=169]{libs/XJTLU_format}
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter}
 \input{libs/preamble.tex}
 % Inserting the references file
 \bibliography{references.bib}
@@ -19,7 +19,7 @@
     \department{School of Advanced Technology}
     \newline
     % University name
-    \university{Xi'an Jiaotong-Liverpool University}
+    \university{Xi’an Jiaotong-Liverpool University}
 }
 % date of the presentation
 \date{\today}
@@ -203,6 +203,7 @@
         \centering
         \includegraphics[scale=0.5]{libs/XJTLU_logo.png}
         \caption{Logo of XJTLU.}
+        % \source{Description of XJTLU}
         \label{fig:XJTLU_logo}
     \end{figure}
 \end{frame}
@@ -216,7 +217,7 @@
     3& 4& \\
     5& 6&
   \end{tabular}
-  \caption{}
+  \caption{This is a table}
 \end{table}
 
 \end{frame}

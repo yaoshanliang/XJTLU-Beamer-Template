@@ -6,7 +6,7 @@
 \LoadClass[compress, 10pt]{beamer}
 
 %% Putting the background image in the frames
-\usebackgroundtemplate{\hspace{10cm} \vspace{2.2cm}\transparent{0.9}\includegraphics[width=0.18\paperwidth]{libs/XJTLU_name.png} }
+\usebackgroundtemplate{\hspace{13cm}\vspace{-2cm}\transparent{0.6}\includegraphics[width=0.145\paperwidth]{libs/XJTLU_name.png} }
 %\logo{\includegraphics[scale=0.3]{libs/XJTLU_logo.png} \hspace{9cm} \vspace{-0.2cm}}
 
 
@@ -24,22 +24,28 @@
 \RequirePackage{colortbl}
 \RequirePackage{graphicx}
 \RequirePackage{fancybox}
-\RequirePackage[footnotesize,hang]{caption}
+%\RequirePackage[footnotesize,hang]{caption}
 % Option management
 \RequirePackage{beamerbaseoptions}
+\RequirePackage{bbm}
 
 
 % colors
 \definecolor{navy_theme}{RGB}{1, 5, 68}
 \definecolor{middle}{RGB}{95, 39, 114}
-\definecolor{purple}{RGB}{206, 87, 193}
+\definecolor{purple}{RGB}{160, 67, 163}
+
+%\definecolor{navy_theme}{RGB}{1, 5, 68}
+%\definecolor{middle}{RGB}{95, 39, 114}
+%\definecolor{purple}{RGB}{206, 87, 193}
+
 \definecolor{black}{RGB}{0, 0, 0}
 \definecolor{white}{RGB}{255, 255, 255}
 \definecolor{red}{RGB}{215, 0, 0}
 \definecolor{yellow}{RGB}{255, 242, 0}
 \definecolor{aqua}{RGB}{34, 189, 173}
 
-% style of the blocks XJTLU
+% style of the blocks ufc
 \beamerboxesdeclarecolorscheme{blockXJTLU}{navy_theme}{white}
 \beamer@autopdfinfotrue
 \beamer@notesnormalstrue
@@ -55,7 +61,7 @@
 \setbeamercolor{section in head/foot}{bg=navy_theme, fg=white}
 \setbeamercolor{subsection in head/foot}{bg=middle, fg=white}
 \setbeamercolor{institute in head/foot}{bg=purple, fg=white}
-\setbeamerfont{block title}{size={}}
+\setbeamerfont{block title}{size=\small}
 
 
 %% ---------- bottom fields ---------------------
@@ -96,7 +102,8 @@
 
 %% draw the blocks
 \setbeamertemplate{blocks}[rounded][shadow=true]
-% \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top 
+%\setbeamertemplate{blocks}[shadow=true]
+ \setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg} % color on the top 
 
 % block
 \setbeamercolor*{block title}{fg=white, bg=navy_theme}
@@ -134,7 +141,7 @@
 \newcommand{\alertbox}[1]{
 \begin{flushleft}
 \fcolorbox{red}{white}{
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{0.97\textwidth}
 #1
 \end{minipage}
 }
@@ -145,7 +152,7 @@
 \newcommand{\simplebox}[1]{
 \begin{flushleft}
 \fcolorbox{navy_theme}{white}{
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{0.97\textwidth}
 #1
 \end{minipage}
 }
@@ -156,7 +163,7 @@
 \newcommand{\successbox}[1]{
 \begin{flushleft}
 \fcolorbox{aqua}{white}{
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{0.97\textwidth}
 #1
 \end{minipage}
 }
@@ -164,9 +171,9 @@
 }
 
 % create the source of the image
-\newcommand{\source}[1]{
-    \caption*{\textcolor{navy_theme}{Figure:} {#1}} 
-}
+%\newcommand{\source}[1]{
+%    \caption*{\textcolor{navy_theme}{Figure:} {#1}} 
+%}
 
 % university command
 \newcommand{\university}[1]{
@@ -189,5 +196,8 @@
     }
 }
 
-% Show number of figures
-\setbeamertemplate{caption}[numbered]
+\newcommand{\supervisor}[1]{
+    \textmd{
+      \normalsize{#1}
+    }
+}
